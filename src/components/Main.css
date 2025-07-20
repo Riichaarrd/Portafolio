@@ -1,0 +1,257 @@
+/* Puedes poner esto en tu archivo CSS */
+.Yo {
+  font-family: 'Tektur', sans-serif;
+  font-size: 3rem;
+  width: 570px;
+}
+
+.yotxt {
+  margin-top: 1rem;
+  font-family: 'Tektur', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #ccc;
+  width: 950px;
+}
+
+.imgyo {
+  margin-top: 5rem;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.imgyo img {
+  border-radius: 50%;
+}
+
+.proyectos {
+  background-color: #242323;
+  color: #fff;
+  padding: 2rem;
+}
+
+
+.text-center {
+  width: 50%;
+  height: auto;
+}
+
+.txtmi{ 
+  text-align:justify;
+  font-family: 'Tektur', sans-serif;
+}
+
+.tec img{ 
+  border-radius: 30px;
+  transition: color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.tec img:hover { 
+  border-color: rgb(250, 115, 66);
+  box-shadow: 0 0 10px rgba(250, 115, 66, 0.5);
+  transition: all 0.3s ease-in-out; 
+  transform: scale(1.05);
+}
+
+.tec p{ 
+  width: 16px;
+  font-weight: 500;
+  margin-left: 23px;
+  margin-top: 10px;
+}
+
+.Proyectos{ 
+  display: flex;
+  background-color: #242323;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.pr img{
+  width: 512px;
+  height: auto;
+  border-radius: 10px; 
+
+}
+
+.splide img{ 
+  border-radius: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+/* Estilos para móviles (hasta 768px) */
+@media (max-width: 768px) {
+  /* Sección Home */
+  .homectn{ 
+    width: 100%;
+    height: 400px;
+  }
+
+  .imgsplides{ 
+    width: 100%;
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: none!;
+    padding: none;
+    max-height: 400px;
+  }
+
+
+  /* Sección Proyectos */
+  .Proyectos {
+    height: auto;
+    padding: none;
+    margin-top: none;
+  }
+  
+  .imgsplide {
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 1rem;
+    margin-top: none;
+  }
+
+  .pr1{ 
+    margin-top: -100px;
+  }
+  
+
+  
+  .imgyo {
+    width: 150px;
+    height: 150px;
+    margin-top: 2rem;
+  }
+
+  .Yo{ 
+    max-width: 100%;
+    margin-left: 40px;
+  }
+  
+  .yo {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .yotxt {
+    font-size: 0.9rem;
+    max-width: 95%;
+  }
+  
+  /* Sección Sobre Mí */
+  .proyectos {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 1rem;
+  }
+  
+  .proyectos img {
+    width: 80%;
+    margin: 0 auto 2rem;
+  }
+  
+  .text-content {
+    padding: 0 1rem;
+  }
+  
+  .txtmi p {
+    font-size: 0.9rem;
+    max-width: 100%;
+  }
+  
+  /* Sección Tecnologías */
+  .tecnologias {
+    height: auto;
+    padding: 3rem 1rem;
+  }
+  
+  .tec {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    width: 100%;
+    padding: 0 1rem;
+  }
+  
+  .tech-item {
+    text-align: center;
+  }
+  
+  .tech-item img {
+    max-width: 60px;
+    margin: 0 auto;
+  }
+  
+  
+  
+  /* Sección Contacto */
+  .Contacto {
+    height: auto;
+    padding: 3rem 1rem;
+  }
+  
+  form {
+    width: 95%;
+    padding: 1.5rem;
+  }
+}
+
+/* Estilos para tablets (769px a 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .imgyo {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .proyectos {
+    flex-direction: column;
+    height: auto;
+    padding: 3rem 2rem;
+  }
+  
+  .tec {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .imgsplide {
+    grid-template-columns: 1fr;
+  }
+  
+  .imgsplide > div {
+    margin-bottom: 2rem;
+  }
+}
+
+/* Ajustes generales para mejorar la legibilidad en móviles */
+@media (max-width: 768px) {
+  h1, h2 {
+    font-size: 1.8rem !important;
+  }
+  
+  p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  .line {
+    width: 80% !important;
+  }
+  
+  .splide__arrows {
+    display: none; /* Ocultar flechas en móviles para ahorrar espacio */
+  }
+}
+
+/* Ajustes para el texto de escritura automática */
+@media (max-width: 480px) {
+  .yo {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,168 @@
+.headertxt a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+    
+}
+.nav-link {
+            position: relative;
+            color: inherit;
+            transition: color 0.3s;
+                }
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background: #f19215;
+    transition: width 0.3s;
+                }
+            
+.nav-linkh {
+            position: relative;
+            transition: color 0.3s;
+                }
+
+.nav-linkh::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background: #f19215;
+    transition: width 0.3s;
+                }
+
+.nav-linkh:hover::after {
+    width: 100%;
+                }
+
+.nav-link:hover {
+    color: #f19215;
+                }
+
+.nav-link:hover::after {
+    width: 100%;
+                }
+
+.headertxt a{
+  font-family: 'Space Grotesk', 'Red Hat Text', 'Roboto', 'Zilla Slab', sans-serif;
+  
+}
+
+.logo {
+    transition: color 0.3s, text-shadow 0.3s;
+    color: #ffae44;
+    text-shadow: 0 0 8px #f19215, 0 0 16px #f19933;
+}
+
+
+
+header {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.ctnelements {
+    font-size: 17px;
+}
+
+/* Estilos base del header */
+header {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.header-blur {
+  backdrop-filter: blur(0);
+  -webkit-backdrop-filter: blur(0);
+}
+
+.nav-link, .nav-linkh {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover, .nav-linkh:hover {
+  opacity: 0.8;
+}
+
+.glow-hover:hover {
+  text-shadow: 0 0 8px rgba(245, 158, 11, 0.6);
+}
+
+/* Estilos para móviles */
+@media (max-width: 767px) {
+  .headertxt {
+    width: 100% !important;
+    padding: 0 1rem;
+  }
+  
+  .ctnelements:not(.mobile-menu) {
+    display: none;
+  }
+  
+  .logo {
+    font-size: 1.8rem !important;
+  }
+
+  /* Elimina el menú mobile de pantalla completa */
+  .itemsmobile {
+    display: none;
+  }
+}
+
+/* Nuevo: estilos para el pequeño nav mobile */
+@media (max-width: 767px) {
+  nav[aria-label="Menú móvil"], .mobile-nav-menu {
+    position: fixed;
+    top: 1.5rem;
+    right: 1.25rem;
+    background: rgba(20, 20, 20, 0.97);
+    border-radius: 1rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+    padding: 1.2rem 1.5rem 1.2rem 1.5rem;
+    z-index: 1000;
+    min-width: 200px;
+    max-width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+}
+
+/* Transición suave para el menú móvil */
+.mobile-menu-enter {
+  opacity: 0;
+}
+.mobile-menu-enter-active {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+.mobile-menu-exit {
+  opacity: 1;
+}
+.mobile-menu-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+/* Estilos para el botón de cerrar */
+.close-button {
+  transition: transform 0.3s ease;
+}
+
+.close-button:hover {
+  transform: scale(1.2);
+}
+
+/* Asegurar que el menú mobile esté sobre otros elementos */
+.mobile-menu-container {
+  z-index: 1000;
+}
+
